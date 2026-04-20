@@ -143,7 +143,7 @@ int main() {
 			cout << endl << "Prestamo rechazado, plazo para pago es demasiado alto para el monto a adquirir." << endl;
 			return 0;
 			
-		}else if( plazo >= 24 && monto > 2000000 && monto < 5000000){
+		}else if( plazo > 24 && monto > 2000000 && monto < 5000000){
 			
 			
 			cout << endl << "Prestamo rechazado, plazo para pago es demasiado alto para el monto a adquirir." << endl;
