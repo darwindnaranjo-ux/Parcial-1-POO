@@ -3,7 +3,7 @@
 #include <string>
 #include <iomanip>
 
-//Permite usar elementos de la librería estándar sin colocar std::
+//Permite usar elementos de la librerÃ­a estÃ¡ndar sin colocar std::
 using namespace std;
 
 //Funcion principal
@@ -30,20 +30,20 @@ int main() {
 	
 	cout << "-  Ingresa un numero entre 1 y 4 segun tu ocupacion: ";
 	
-	while (true) { //VALIDACIÓN DE ENTRADA TIPO_DE_CLIENTE
+	while (true) { //VALIDACIÃ“N DE ENTRADA TIPO_DE_CLIENTE
 		cin >> tipo_cliente;
 		
 		if(cin.fail()) { //Si ingresan un numero correcatmnete devuelve fail
 			cin.clear(); //Quitamos el estado de error del cin
-			cin.ignore(1000,'\n'); //Borra lo que quedó escrito en el bufer milcaracteres o hasta un enter
-			cout << endl <<"\aEntrada inválida. No puedes ingresar letras." << endl << "-  Ingresa un numero entre 1 y 4: ";
+			cin.ignore(1000,'\n'); //Borra lo que quedÃ³ escrito en el bufer milcaracteres o hasta un enter
+			cout << endl <<"\aEntrada invÃ¡lida. No puedes ingresar letras." << endl << "-  Ingresa un numero entre 1 y 4: ";
 			continue;
 		}
 		
 		if(tipo_cliente >=1 && tipo_cliente <=4)
 					break; //sale cuando ya se cumplio la condicion correcta
 		
-		cout << endl <<"\aError. Número fuera de rango" << endl << "-  Ingresa un numero entre 1 a 4: ";
+		cout << endl <<"\aError. NÃºmero fuera de rango" << endl << "-  Ingresa un numero entre 1 a 4: ";
 	}
 	
 	cout << endl << "- Montos limites para clientes: " << endl << endl;
@@ -58,14 +58,14 @@ int main() {
 		
 		if(cin.fail()) { //Si ingresan un numero correcatmnete devuelve fail
 			cin.clear(); //Quitamos el estado de error del cin
-			cin.ignore(1000,'\n'); //Borra lo que quedó escrito en el bufer milcaracteres o hasta un enter
-			cout << endl <<"\aEntrada inválida. No puedes ingresar letras." << endl << "-  Ingrese el monto solicitado: ";
+			cin.ignore(1000,'\n'); //Borra lo que quedÃ³ escrito en el bufer milcaracteres o hasta un enter
+			cout << endl <<"\aEntrada invÃ¡lida. No puedes ingresar letras." << endl << "-  Ingrese el monto solicitado: ";
 			continue;
 		}
 		if(monto >= 1)
 					break; //sale cuando ya se cumplio la condicion correcta
 		
-		cout<<"\aError. Número fuera de rango" << endl << "-  Ingrese el monto solicitado: ";
+		cout<<"\aError. NÃºmero fuera de rango" << endl << "-  Ingrese el monto solicitado: ";
 		
 	}
 	
@@ -78,34 +78,34 @@ int main() {
 		
 		if(cin.fail()) { //Si ingresan un numero correcatmnete devuelve fail
 			cin.clear(); //Quitamos el estado de error del cin
-			cin.ignore(1000,'\n'); //Borra lo que quedó escrito en el bufer milcaracteres o hasta un enter
-			cout << endl <<"\aEntrada inválida. No puedes ingresar letras." << endl << "-  Ingrese el monto solicitado: ";
+			cin.ignore(1000,'\n'); //Borra lo que quedÃ³ escrito en el bufer milcaracteres o hasta un enter
+			cout << endl <<"\aEntrada invÃ¡lida. No puedes ingresar letras." << endl << "-  Ingrese el monto solicitado: ";
 			continue;
 		}
 		if(plazo > 0)
 					break; //sale cuando ya se cumplio la condicion correcta
 		
-		cout << endl <<"\aError. Número fuera de rango" << endl << "- Ingrese un numero positivo:  ";
+		cout << endl <<"\aError. NÃºmero fuera de rango" << endl << "- Ingrese un numero positivo:  ";
 		
 	}
 	
 	
 	
-	cout << "- ¿Cuenta con un codeudor para respaldar el credito?" << endl << "-  Ingrese UNO (1) para Sí o marque CERO (0) para No: ";
+	cout << "- Â¿Cuenta con un codeudor para respaldar el credito?" << endl << "-  Ingrese UNO (1) para SÃ­ o marque CERO (0) para No: ";
 	
 	while (true) { //VALIDACION DE ENTRADA CODEUDOR
 		cin >> codeudor;
 		
 		if(cin.fail()) { //Si ingresan un numero correcatmnete devuelve fail
 			cin.clear(); //Quitamos el estado de error del cin
-			cin.ignore(1000,'\n'); //Borra lo que quedó escrito en el bufer milcaracteres o hasta un enter
-			cout << endl <<"\aEntrada inválida. Inténtalo de nuevo." << endl << "-  Ingrese UNO (1) para Sí o marque CERO (0) para No: ";
+			cin.ignore(1000,'\n'); //Borra lo que quedÃ³ escrito en el bufer milcaracteres o hasta un enter
+			cout << endl <<"\aEntrada invÃ¡lida. IntÃ©ntalo de nuevo." << endl << "-  Ingrese UNO (1) para SÃ­ o marque CERO (0) para No: ";
 			continue;
 		}
 		if(codeudor == 0 || codeudor == 1)
 					break; //sale cuando ya se cumplio la condicion correcta
 		
-		cout<<"\aError. Número fuera de rango" << endl << "-  Ingresa UNO (1) o CERO (0): ";
+		cout<<"\aError. NÃºmero fuera de rango" << endl << "-  Ingresa UNO (1) o CERO (0): ";
 	}
 	
 
